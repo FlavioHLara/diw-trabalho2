@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: relative;
+}
+
+header .logo h1 {
+    width: 100%;
+    text-align: center;
+    padding-left: 30% !important;
+}
+
+.main-content {
+    flex: 1;
+    padding-bottom: 60px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+.abrir-menu {
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+}
+
+.filme {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.filme:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.filme img {
+    height: 380px;
+    object-fit: cover;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .formulario {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.pl-xl-7 {
+    padding-left: 400px !important;
+}
+
+.pl-lg-7 {
+    padding-left: 300px !important;
+}
+
+.pl-md-7 {
+    padding-left: 200px !important;
+}
+
+.pl-sm-7 {
+    padding-left: 70px !important;
+}
+
+#detalhes-filme {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+#detalhes-filme img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+#detalhes-filme h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#detalhes-filme p {
+    margin-bottom: 0.5rem;
+}
+
+#detalhes-filme h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.alert {
+    margin-top: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
