@@ -32,7 +32,7 @@
       "nome": "teste",
       "email": "teste@email.com",
       "senha": "teste",
-      "administrador": false,
+      "administrador": true,
       "favoritos": [
         1,
         2,
@@ -45,12 +45,20 @@
       "nome": "tijolo",
       "email": "tijolo@email.com",
       "senha": "tijolover",
-      "administrador": false,
+      "administrador": true,
       "favoritos": [
         3,
         1,
         6
       ]
+    },
+    {
+      "id": "b6a7",
+      "nome": "teste",
+      "email": "teste2@email.com",
+      "senha": "teste",
+      "administrador": true,
+      "favoritos": []
     }
   ],
   "filmes": [
@@ -333,6 +341,19 @@
       "genero": "Drama",
       "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cd/Whiplash_em_busca_da_perfeicao.png/250px-Whiplash_em_busca_da_perfeicao.png",
       "avaliacao": 8.9
+    },
+    {
+      "id": "838f",
+      "titulo": "Tropa de Elite",
+      "descricao": "teste",
+      "conteudo": "teste",
+      "diretor": "teste",
+      "elenco": "teste",
+      "ano": 2005,
+      "duracao": "120",
+      "genero": "Ação",
+      "imagem": "https://m.media-amazon.com/images/S/pv-target-images/4aee6806d68bbef14a10ed7e0a335a0c253ad604abb6749b4328361a979c1515.jpg",
+      "avaliacao": 8.7
     }
   ]
 }

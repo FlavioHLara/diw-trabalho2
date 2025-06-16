@@ -58,7 +58,7 @@ function salvarFilme(event) {
         }).then(() => {
             document.getElementById("form-filme").reset();
             document.getElementById("filmeId").value = "";
-            carregarFilmes();
+            carregarFilmesCadastro();
         });
     } else {
         fetch(API_URL, {
@@ -67,7 +67,7 @@ function salvarFilme(event) {
             body: JSON.stringify(filme)
         }).then(() => {
             document.getElementById("form-filme").reset();
-            carregarFilmes();
+            carregarFilmesCadastro();
         });
     }
 }
@@ -99,6 +99,6 @@ function excluirFilme(id) {
     if (confirm("Deseja excluir este filme?")) {
         fetch(`${API_URL}/${id}`, {
             method: "DELETE"
-        }).then(() => carregarFilmes());
+        }).then(() => carregarFilmesCadastro());
     }
 }
