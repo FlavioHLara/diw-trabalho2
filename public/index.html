@@ -10,9 +10,7 @@
 <div id="menuLateral" class="menu">
     <button class="fechar btn" onclick="fecharMenu()">×</button>
     <a href="index.html">Início</a>
-    <a href="#">Filmes</a>
-    <a href="#">Categorias</a>
-    <a href="#">Contato</a>
+    <a id="linkCadastroFilmes" href="cadastro.html">Cadastrar Filmes</a>
 </div>
 <button class="abrir-menu btn btn-dark" onclick="abrirMenu()">☰</button>
 <header class="container-fluid bg-dark text-white py-3">
@@ -94,6 +92,11 @@
 <script src="carrossel.js"></script>
 <script src="usuario.js"></script>
 <script>
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+
+    if (usuarioLogado && usuarioLogado.admin === true) {
+        document.getElementById('linkCadastroFilmes').style.display = 'block';
+    }
     function abrirMenu() {
         document.getElementById("menuLateral").style.width = "250px";
     }

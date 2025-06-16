@@ -48,7 +48,8 @@
       "administrador": false,
       "favoritos": [
         3,
-        1
+        1,
+        6
       ]
     }
   ],
@@ -319,6 +320,19 @@
           "legenda": "Clarice Starling"
         }
       ]
+    },
+    {
+      "id": 12,
+      "titulo": "Whiplash",
+      "descricao": "Descrição",
+      "conteudo": "sinopse",
+      "diretor": "teste",
+      "elenco": "teste",
+      "ano": 1234,
+      "duracao": "123",
+      "genero": "Drama",
+      "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cd/Whiplash_em_busca_da_perfeicao.png/250px-Whiplash_em_busca_da_perfeicao.png",
+      "avaliacao": 8.9
     }
   ]
 }

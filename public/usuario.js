@@ -39,7 +39,7 @@ function realizarCadastro(event) {
         });
 }
 
-function realizarLogin(event) {
+async function realizarLogin(event) {
     event.preventDefault();
 
     const email = document.getElementById('loginEmail').value.trim();
@@ -57,7 +57,7 @@ function realizarLogin(event) {
                 alert('Usuário ou senha inválidos.');
             }
         });
-    carregarFilmes();
+    await carregarFilmes();
 }
 
 function atualizarEstadoUsuario() {
@@ -83,12 +83,12 @@ function atualizarEstadoUsuario() {
     }
 }
 
-function logout() {
+async function logout() {
     sessionStorage.removeItem('usuarioLogado');
     localStorage.removeItem('usuarioLogado');
     localStorage.removeItem('favoritos');
     atualizarEstadoUsuario();
-    carregarFilmes();
+    await carregarFilmes();
 }
 
 document.addEventListener('DOMContentLoaded', atualizarEstadoUsuario);

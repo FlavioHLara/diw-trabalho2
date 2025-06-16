@@ -78,7 +78,7 @@ async function toggleFavorito(filmeId) {
     usuarioLogado.favoritos = favoritos;
     localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));
 
-    renderizarFilmes(filmesCache);
+    await carregarFilmes();
 }
 
 function aplicarFiltroPesquisa() {
