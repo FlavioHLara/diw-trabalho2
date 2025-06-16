@@ -1,4 +1,57 @@
 {
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Admin",
+      "email": "admin@filmes.com",
+      "senha": "1234",
+      "favoritos": [
+        1,
+        3
+      ],
+      "admin": true
+    },
+    {
+      "id": 2,
+      "nome": "João",
+      "email": "joao@email.com",
+      "senha": "abcd",
+      "favoritos": [],
+      "admin": false
+    },
+    {
+      "id": 2,
+      "nome": "Flávio",
+      "email": "flavio@gmail.com",
+      "senha": "teste123",
+      "favoritos": [],
+      "admin": true
+    },
+    {
+      "id": "37a7",
+      "nome": "teste",
+      "email": "teste@email.com",
+      "senha": "teste",
+      "administrador": false,
+      "favoritos": [
+        1,
+        2,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "045c",
+      "nome": "tijolo",
+      "email": "tijolo@email.com",
+      "senha": "tijolover",
+      "administrador": false,
+      "favoritos": [
+        3,
+        1
+      ]
+    }
+  ],
   "filmes": [
     {
       "id": 1,
@@ -15,8 +68,14 @@
       "avaliacao": 9.2,
       "destaque": true,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena1.jpg", "legenda": "Cena do casamento" },
-        { "url": "https://exemplo.com/cena2.jpg", "legenda": "Michael Corleone" }
+        {
+          "url": "https://exemplo.com/cena1.jpg",
+          "legenda": "Cena do casamento"
+        },
+        {
+          "url": "https://exemplo.com/cena2.jpg",
+          "legenda": "Michael Corleone"
+        }
       ]
     },
     {
@@ -31,11 +90,17 @@
       "genero": "Aventura, Fantasia",
       "imagem": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
       "imagemMobile": "https://i.ytimg.com/vi/OQgySPQ5M3Y/maxresdefault.jpg",
-      "avaliacao": 9.0,
+      "avaliacao": 9,
       "destaque": true,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena3.jpg", "legenda": "Batalha final" },
-        { "url": "https://exemplo.com/cena4.jpg", "legenda": "Frodo e Sam" }
+        {
+          "url": "https://exemplo.com/cena3.jpg",
+          "legenda": "Batalha final"
+        },
+        {
+          "url": "https://exemplo.com/cena4.jpg",
+          "legenda": "Frodo e Sam"
+        }
       ]
     },
     {
@@ -53,8 +118,14 @@
       "avaliacao": 8.6,
       "destaque": true,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena5.jpg", "legenda": "Nave espacial" },
-        { "url": "https://exemplo.com/cena6.jpg", "legenda": "Planeta desconhecido" }
+        {
+          "url": "https://exemplo.com/cena5.jpg",
+          "legenda": "Nave espacial"
+        },
+        {
+          "url": "https://exemplo.com/cena6.jpg",
+          "legenda": "Planeta desconhecido"
+        }
       ]
     },
     {
@@ -71,8 +142,14 @@
       "avaliacao": 8.5,
       "destaque": false,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena7.jpg", "legenda": "Família Kim" },
-        { "url": "https://exemplo.com/cena8.jpg", "legenda": "Casa dos Park" }
+        {
+          "url": "https://exemplo.com/cena7.jpg",
+          "legenda": "Família Kim"
+        },
+        {
+          "url": "https://exemplo.com/cena8.jpg",
+          "legenda": "Casa dos Park"
+        }
       ]
     },
     {
@@ -89,8 +166,14 @@
       "avaliacao": 8.8,
       "destaque": true,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena9.jpg", "legenda": "Cena do porão" },
-        { "url": "https://exemplo.com/cena10.jpg", "legenda": "Regras do clube" }
+        {
+          "url": "https://exemplo.com/cena9.jpg",
+          "legenda": "Cena do porão"
+        },
+        {
+          "url": "https://exemplo.com/cena10.jpg",
+          "legenda": "Regras do clube"
+        }
       ]
     },
     {
@@ -107,8 +190,14 @@
       "avaliacao": 8.9,
       "destaque": false,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena11.jpg", "legenda": "Vincent e Mia" },
-        { "url": "https://exemplo.com/cena12.jpg", "legenda": "Jules e Vincent" }
+        {
+          "url": "https://exemplo.com/cena11.jpg",
+          "legenda": "Vincent e Mia"
+        },
+        {
+          "url": "https://exemplo.com/cena12.jpg",
+          "legenda": "Jules e Vincent"
+        }
       ]
     },
     {
@@ -125,8 +214,14 @@
       "avaliacao": 8.2,
       "destaque": true,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena13.jpg", "legenda": "Jordan Belfort" },
-        { "url": "https://exemplo.com/cena14.jpg", "legenda": "Escritório da Stratton Oakmont" }
+        {
+          "url": "https://exemplo.com/cena13.jpg",
+          "legenda": "Jordan Belfort"
+        },
+        {
+          "url": "https://exemplo.com/cena14.jpg",
+          "legenda": "Escritório da Stratton Oakmont"
+        }
       ]
     },
     {
@@ -143,8 +238,14 @@
       "avaliacao": 8.6,
       "destaque": false,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena15.jpg", "legenda": "Favela" },
-        { "url": "https://exemplo.com/cena16.jpg", "legenda": "Zé Pequeno" }
+        {
+          "url": "https://exemplo.com/cena15.jpg",
+          "legenda": "Favela"
+        },
+        {
+          "url": "https://exemplo.com/cena16.jpg",
+          "legenda": "Zé Pequeno"
+        }
       ]
     },
     {
@@ -161,8 +262,14 @@
       "avaliacao": 8.7,
       "destaque": true,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena17.jpg", "legenda": "Neo" },
-        { "url": "https://exemplo.com/cena18.jpg", "legenda": "Cena da bala" }
+        {
+          "url": "https://exemplo.com/cena17.jpg",
+          "legenda": "Neo"
+        },
+        {
+          "url": "https://exemplo.com/cena18.jpg",
+          "legenda": "Cena da bala"
+        }
       ]
     },
     {
@@ -179,8 +286,14 @@
       "avaliacao": 7.8,
       "destaque": false,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena19.jpg", "legenda": "Jack e Rose" },
-        { "url": "https://exemplo.com/cena20.jpg", "legenda": "Navio afundando" }
+        {
+          "url": "https://exemplo.com/cena19.jpg",
+          "legenda": "Jack e Rose"
+        },
+        {
+          "url": "https://exemplo.com/cena20.jpg",
+          "legenda": "Navio afundando"
+        }
       ]
     },
     {
@@ -197,8 +310,14 @@
       "avaliacao": 8.6,
       "destaque": true,
       "imagens_complementares": [
-        { "url": "https://exemplo.com/cena21.jpg", "legenda": "Hannibal Lecter" },
-        { "url": "https://exemplo.com/cena22.jpg", "legenda": "Clarice Starling" }
+        {
+          "url": "https://exemplo.com/cena21.jpg",
+          "legenda": "Hannibal Lecter"
+        },
+        {
+          "url": "https://exemplo.com/cena22.jpg",
+          "legenda": "Clarice Starling"
+        }
       ]
     }
   ]
